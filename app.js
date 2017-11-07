@@ -15,7 +15,7 @@ app.get(['/', '/home'], (req, res) => { // render looks for file in views
     res.render('index.ejs')
 })
 app.get('/contact', (req, res) => {
-    res.render('contact.ejs', {qs: req.query})
+    res.render('contact.ejs')
 })
 
 app.get('/profile/:name', (req, res) => {
